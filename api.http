@@ -1,0 +1,27 @@
+###
+GET http://localhost:3000/api/empleados
+
+###
+POST http://localhost:3000/api/empleados
+content-type: application/json
+
+{
+    "nombre": "Yolanda Arguello",
+    "cargo": "asistente",
+    "departamento":"contabilidad",
+    "sueldo": 500
+}
+
+###
+PUT http://localhost:3000/api/empleados/65170658dedaf35df702f6c9
+content-type: application/json
+
+{    "id": "65170658dedaf35df702f6c9",
+    "nombre": "Yolanda Arguello",
+    "cargo": "Asistente",
+    "departamento":"contabilidad",
+    "sueldo": 800
+}
+
+###
+DELETE  http://localhost:3000/api/empleados/650eaea270f8f2602e209d71
